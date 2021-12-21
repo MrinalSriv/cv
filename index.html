@@ -1,79 +1,377 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Mrinal Srivastava</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>ArtStudio</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,600;0,900;1,100;1,400;1,500;1,600;1,800;1,900&family=Ubuntu&display=swap"
+          rel="stylesheet">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- kit's code for ICON https://fontawesome.com/ -->
+    <script src="https://kit.fontawesome.com/57ac6d1251.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <div class="top-container" >
-        <img class="top-cloud" src="images/cloud.png" alt="cloud-img"/>
-        <h1> I'm Mrinal.</h1>
-        <h2>a <span class="tech">tech</span>nical architect.</h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img"/>
-        <img src="images/mountain.png" alt="mountain-img"/>
-    </div>
-    <div class="middle-container">
-        <div class="profile">
-            <img src="images/IMG20210610212658.jpg" alt="Image_mrinal">
-            <h2>Hello.</h2>
-            <p>I am a Technical Architect. Working in HCL technologies LTD. Singapore. </p>
-        </div>
-        <hr>
-        <div class="skills">
-            <h2>My Skills.</h2>
-            <div class="skill-row">
-                <img class="code-image" src="images/computer.png" alt="code-image">
-                <h3>Design & Development </h3>
-                <p>Experience in executing full life-cycle development projects; ramping up projects within time, budget & quality parameters, as per project management & best practice guidelines, targeting assignments in Python, Data Science, Machine Learning and Deep Learning with an organization of high repute</p>
-            </div>
-            <div class="skill-row">
-                <img class="chilli-img" src="images/chillies.png" alt="chilli-img">
-                <h3>Profile Summary</h3>
-                <p>
-                <ul>
-                    <li>Achievement-driven professional with an experience of nearly 16 years</li>
-                    <li>Designed and developed integration methodologies between client web portal and existing software infrastructure using SOAP API and vendor specific framework</li>
-                    <li>Expertise in web python frameworks( flask and stream lit)</li>
-                    <li>Skilled in libraries such as Keras, Tensorflow, Sklearn, Numpy, Pandas, Matplotlib.</li>
-                    <li>Rich experience in all phases of the software development life cycle such as agile process (requirements, design, development, testing, release, support), utilizing multiple development methodologies, including Design Patterns, OOD, Extreme Programming, and Structured Programming</li>
-                    <li>Extensive knowledge of working with NoSQL databases like MongoDB and SQL databases like SQL Server, Oracle, and Sybase<</li>
-                    <li>Worked with Devops teams for creating CI/CD Pipelines using Jenkins.<</li>
-                    <li>Possess excellent technical, interpersonal, Client-facing, analytical, problem solving and project co-ordination skills to drive / manage projects End-to End and participate in key discussions with all stake holders / CXOs.</li>
-                    <li>Ensured smooth communication between the development team and the client, focusing on a correct transition of the requirements and specifications.</li>
-                    <li>AWS Solution Architect Associate Certified.</li>
-                    <li>Microsoft Azure Fundamentals Certified.</li>
-                    <li>Microsoft Azure AI Fundamentals Certified.</li>
-                    <li>Working knowledge of current techniques and approaches in machine learning and natural language processing (NLP)</li>
-                    <li>Experience in architecting Artificial Intelligence applications with Machine Learning, Deep Learning with Python. Deep Learning Techniques includes ANN, CNN, RNN, Advanced CNN and Advanced RNN with LSTM.</li>
-                    <li>Additional skills of C#, VB .NET</li>
+
+<section class ="colored-section" id="title">
+    <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <img class="logo" src="images/rashikaartdream.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Classes">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Gallary">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#stw">StudentWork</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
                 </ul>
-                </p>
+            </div>
+        </nav>
+
+
+        <!-- Title -->
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="big-heading">Art Studio goal is to bring passion of art come true, allowing both adults and children to have a chance to hone their innate artistic talent.</h1>
+               <!-- <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download
+                </button>
+                <button type="button" class="btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download
+                </button>-->
+
+            </div>
+            <div class="col-lg-6">
+                <img class="title-image" src="images/header.jpg" alt="header-mockup">
             </div>
         </div>
-        <hr>
-        <div class="contact-me">
-            <h2>Get In Touch</h2>
-            <!--<h3>Lorem ipsum dolor sit amet, non elit.</h3>
-            <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>-->
-            <p class="contact-message">You can contact me on below email id or follow me in LinkedIn/Github</p>
-            <a class="btn" href="mailto:srivastava.mrinal@gmail.com">CONTACT ME</a>
+
+    </div>
+</section>
+
+
+<!-- Features -->
+
+<section class ="white-section" id="Classes">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="feature-box col-lg-4">
+                <i class="icon fas fa-check-circle fa-4x"></i>
+                <h3 class="feature-title">Trail Class</h3>
+                <p>Contact us Online booking.</p>
+
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="icon fas fa-bullseye fa-4x"></i>
+                <h3 class="feature-title">Regular Class</h3>
+                <p>Contact us for Offline in Person Class.</p>
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="icon fas fa-heart fa-4x"></i>
+                <h3 class="feature-title">Online Class.</h3>
+                <p>Contact us for Online class.</p>
+            </div>
+
         </div>
+
+    </div>
+</section>
+
+
+<!-- Testimonials -->
+
+<section class ="colored-section" id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active container-fluid">
+                <h2 class="testimonial-text">Kindly rate the teaching method</h2>
+                <img class="testimonial-image" src="images/feedback/teaching_method.PNG" alt="teaching-met">
+
+            </div>
+            <div class="carousel-item container-fluid">
+                <h2 class="testimonial-text">My child is coping well with art classes</h2>
+                <img class="testimonial-image" src="images/feedback/Child_coping.PNG" alt="child-coping">
+
+            </div>
+            <div class="carousel-item container-fluid">
+                <h2 class="testimonial-text">Overall you are ------- with art classes</h2>
+                <img class="testimonial-image" src="images/feedback/overall_rating.PNG" alt="overall-rating">
+
+            </div>
+            <div class="carousel-item container-fluid">
+                <h2 class="testimonial-text">Any comments or suggestions</h2>
+                <img class="testimonial-image" src="images/feedback/commentsandsuggestion.PNG" alt="comments">
+
+            </div>
+
+
+        </div>
+        <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
     </div>
 
 
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/mrinal-srivastava-4225839/">LinkedIn</a>
-        <a class="footer-link" href="https://github.com/MrinalSriv">GitHub</a>
-        <a class="footer-link" href="https://www.linkedin.com/in/mrinal-srivastava-4225839/">Website</a>
-        <p class="copyright"> ©2022 Mrinal Srivastava.</p>
+</section>
+
+
+<!-- Press -->
+<!--
+<section class ="colored-section" id="press">
+    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
+    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
+    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
+    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
+
+</section>
+-->
+
+<!-- Gallary -->
+
+<section class ="white-section" id="Gallary">
+
+
+    <div id="gallary-carousel" class="carousel slide" data-ride="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active container-fluid">
+                <img class="gallary-image" src="images/1.jpg" alt="teaching-met">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="gallary-image" src="images/2.jpg" alt="child-coping">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="gallary-image" src="images/3.jpg" alt="overall-rating">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="gallary-image" src="images/4.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="gallary-image" src="images/5.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="gallary-image" src="images/6.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="gallary-image" src="images/7.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="gallary-image" src="images/8.jpg" alt="comments">
+            </div>
+        </div>
+       <!-- <a class="carousel-control-prev" href="#gallary-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#gallary-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>-->
+        <a class="carousel-control-prev" href="#gallary-carousel" role="button" data-slide="prev">
+            <span><i class="fa fa-angle-left" style="color:red;" aria-hidden="true"></i></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#gallary-carousel" role="button" data-slide="next">
+            <span><i class="fa fa-angle-right" style="color:red;" aria-hidden="true"></i></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+
     </div>
 
+
+</section>
+
+
+<!-- Call to Action -->
+
+<section class ="colored-section" class ="colored-section" id="stw">
+
+    <div id="studentwork-carousel" class="carousel slide" data-ride="false">
+        <h4> We Believe that Every Child is an Artist!!!<br>
+                 - Pablo Picasso</h4>
+        <div class="carousel-inner">
+            <div class="carousel-item active container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/1.jpg" alt="teaching-met">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/2.jpg" alt="child-coping">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/3.jpg" alt="overall-rating">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/4.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/5.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="gallary-image" src="images/ArtWorks/6.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/7.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/8.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/9.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/10.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/11.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/12.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/13.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/14.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/15.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/16.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/17.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/18.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/19.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/20.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/21.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/22.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/23.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/24.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/25.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/26.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/27.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/28.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/29.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/30.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/31.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/32.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/33.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/34.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/35.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/36.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/37.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/38.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/39.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/40.jpg" alt="comments">
+            </div>
+            <div class="carousel-item container-fluid">
+                <img class="studentwork-image" src="images/ArtWorks/41.jpg" alt="comments">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#studentwork-carousel" role="button" data-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+         </a>
+         <a class="carousel-control-next" href="#studentwork-carousel" role="button" data-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+         </a>
+</section>
+
+
+<!-- Footer -->
+
+<footer id="footer">
+    <div class="container-fluid">
+
+        <i class="social-icon fab fa-facebook"></i>
+        <i class="social-icon fab fa-youtube"></i>
+        <i class="social-icon fab fa-instagram-square"></i>
+        <i class="social-icon fas fa-envelope"></i>
+        <p>© Copyright 2022 Rashika Art Dream</p>
+    </div>
+</footer>
 
 
 </body>
+
 </html>
